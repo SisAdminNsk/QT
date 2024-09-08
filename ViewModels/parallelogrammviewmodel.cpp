@@ -20,11 +20,6 @@ ParallelogrammViewModel::~ParallelogrammViewModel(){
     delete this->inputParallelogramHeight;
 }
 
-void ParallelogrammViewModel::ClearInputForms(){
-    this->inputParallelogramBase->clear();
-    this->inputParallelogramHeight->clear();
-}
-
 void ParallelogrammViewModel::SetupInputForms(){
     inputParallelogramBase = new QLineEdit(this);
     inputParallelogramHeight = new QLineEdit(this);

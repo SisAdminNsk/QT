@@ -19,11 +19,6 @@ RhombusViewModel::~RhombusViewModel(){
     delete inputDiagonalBField;
 }
 
-void RhombusViewModel::ClearInputForms(){
-    this->inputDiagonalAField->clear();
-    this->inputDiagonalBField->clear();
-}
-
 void RhombusViewModel::SetupInputForms(){
 
     this->inputDiagonalAField = new QLineEdit(this);

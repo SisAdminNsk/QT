@@ -20,10 +20,6 @@ SquareViewModel::~SquareViewModel(){
     delete inputSquareSightField;
 }
 
-void SquareViewModel::ClearInputForms(){
-    this->inputSquareSightField->clear();
-}
-
 void SquareViewModel::SetupInputForms(){
 
     inputSquareSightField = new QLineEdit(this);

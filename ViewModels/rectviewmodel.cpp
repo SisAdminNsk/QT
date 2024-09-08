@@ -20,12 +20,6 @@ RectViewModel::~RectViewModel(){
     delete this->inputRectSightB;
 }
 
-void RectViewModel::ClearInputForms(){
-
-    this->inputRectSightA->clear();
-    this->inputRectSightB->clear();
-}
-
 void RectViewModel::SetupInputForms(){
 
     inputRectSightA = new QLineEdit(this);

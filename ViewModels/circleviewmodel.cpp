@@ -17,10 +17,6 @@ CircleViewModel::~CircleViewModel(){
     delete this->inputCircleRadiousForm;
 }
 
-void CircleViewModel::ClearInputForms(){
-    this->inputCircleRadiousForm->clear();
-}
-
 void CircleViewModel::SetupInputForms(){
 
     inputCircleRadiousForm = new QLineEdit(this);

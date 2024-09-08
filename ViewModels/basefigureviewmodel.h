@@ -28,7 +28,7 @@ class BaseFigureViewModel : public QWidget
 public:
     explicit BaseFigureViewModel(QWidget *parent = nullptr);
     ~BaseFigureViewModel();
-    virtual void ClearInputForms() = 0;
+    virtual void ClearInputForms();
 
 protected:
     virtual void LoadImage(const QString& imagePath);

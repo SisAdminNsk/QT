@@ -11,7 +11,6 @@ class RectViewModel : public BaseFigureViewModel
 public:
     RectViewModel(QWidget *parent = nullptr);
     ~RectViewModel();
-    virtual void ClearInputForms() override;
 protected:
     virtual void SetupInputForms() override;
 

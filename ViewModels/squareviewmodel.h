@@ -11,7 +11,6 @@ class SquareViewModel : public BaseFigureViewModel
 public:
     SquareViewModel(QWidget *parent = nullptr);
     ~SquareViewModel();
-    virtual void ClearInputForms() override;
 protected:
     virtual void SetupInputForms() override;
 

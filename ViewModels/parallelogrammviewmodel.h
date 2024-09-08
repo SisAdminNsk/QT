@@ -9,7 +9,6 @@
 class ParallelogrammViewModel : public BaseFigureViewModel
 {
 public:
-    virtual void ClearInputForms() override;
     ~ParallelogrammViewModel();
     ParallelogrammViewModel(QWidget *parent = nullptr);
 

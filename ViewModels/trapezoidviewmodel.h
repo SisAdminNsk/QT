@@ -11,7 +11,6 @@ class TrapezoidViewModel : public BaseFigureViewModel
 public:
     TrapezoidViewModel(QWidget *parent = nullptr);
     ~TrapezoidViewModel();
-     virtual void ClearInputForms() override;
 protected:
     virtual void SetupInputForms() override;
 

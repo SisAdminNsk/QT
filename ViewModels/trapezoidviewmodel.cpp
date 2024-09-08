@@ -20,12 +20,6 @@ TrapezoidViewModel::~TrapezoidViewModel(){
     delete inputHeightField;
 }
 
-void TrapezoidViewModel::ClearInputForms(){
-    this->inputBaseAField->clear();
-    this->inputBaseBField->clear();
-    this->inputHeightField->clear();
-}
-
 void TrapezoidViewModel::SetupInputForms(){
 
     inputBaseAField = new QLineEdit(this);

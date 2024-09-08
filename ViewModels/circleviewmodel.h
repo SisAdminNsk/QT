@@ -10,7 +10,6 @@ class CircleViewModel : public BaseFigureViewModel
 {
 public:
     CircleViewModel(QWidget *parent = nullptr);
-    virtual void ClearInputForms() override;
     ~CircleViewModel();
 protected:
     virtual void SetupInputForms() override;

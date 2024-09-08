@@ -12,7 +12,6 @@ class TriangleViewModel : public BaseFigureViewModel
 public:
     TriangleViewModel(QWidget *parent = nullptr);
     ~TriangleViewModel();
-    virtual void ClearInputForms() override;
 protected:
     virtual void SetupInputForms() override;
 

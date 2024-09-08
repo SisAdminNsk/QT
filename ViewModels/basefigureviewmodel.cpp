@@ -1,5 +1,6 @@
 
 #include <QMessageBox>
+#include <QLineEdit>
 #include "basefigureviewmodel.h"
 
 BaseFigureViewModel::BaseFigureViewModel(QWidget *parent)
@@ -26,6 +27,23 @@ void BaseFigureViewModel::SetupImage(){
     this->image->setPixmap(this->pixmap->scaled(this->imageWidthPx, this->imageHeightPx, Qt::KeepAspectRatio));
 
     this->layout->addWidget(this->image); // добавляем в разметку изображение
+}
+
+void BaseFigureViewModel::ClearInputForms(){
+
+    for (int i = 0; i < layout->count(); ++i)
+    {
+        auto item = layout->itemAt(i);
+        if (item) {
+            auto widget = item->widget();
+            if (widget) {
+                auto lineEdit = qobject_cast<QLineEdit*>(widget);
+                if (lineEdit) {
+                    lineEdit->clear();
+                }
+            }
+        }
+    }
 }
 
 void BaseFigureViewModel::SetupValidator(){

@@ -19,11 +19,6 @@ TriangleViewModel::~TriangleViewModel(){
     delete inputTriangleHeightField;
 }
 
-void TriangleViewModel::ClearInputForms(){
-    this->inputTriangleBaseField->clear();
-    this->inputTriangleHeightField->clear();
-}
-
 void TriangleViewModel::SetupInputForms(){
 
     inputTriangleBaseField = new QLineEdit(this);

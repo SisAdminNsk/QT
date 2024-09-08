@@ -18,11 +18,6 @@ SectorViewModel::~SectorViewModel(){
     delete inputRadiousForm;
 }
 
-void SectorViewModel::ClearInputForms(){
-    this->inputAlphaForm->clear();
-    this->inputRadiousForm->clear();
-}
-
 void SectorViewModel::SetupInputForms(){
 
     inputAlphaForm = new QLineEdit(this);

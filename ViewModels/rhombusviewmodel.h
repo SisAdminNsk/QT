@@ -11,7 +11,6 @@ class RhombusViewModel : public BaseFigureViewModel
 public:
     RhombusViewModel(QWidget *parent = nullptr);
     ~RhombusViewModel();
-    virtual void ClearInputForms() override;
 protected:
     virtual void SetupInputForms() override;
 

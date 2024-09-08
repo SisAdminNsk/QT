@@ -11,7 +11,6 @@ class SectorViewModel : public BaseFigureViewModel
 public:
     SectorViewModel(QWidget *parent = nullptr);
     ~SectorViewModel();
-    virtual void ClearInputForms() override;
 protected:
     virtual void SetupInputForms() override;
 
